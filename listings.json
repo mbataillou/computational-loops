@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/posts/statistics/listing.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/optimization/listing.html",
+    "items": [
+      "/posts/optimization/2025-03-30-intro-network-optimization-python/index.html",
+      "/posts/optimization/2025-03-30-intro-network-optimization/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/optimization/listing.html",
+      "/posts/statistics/listing.html"
+    ]
+  }
+]
