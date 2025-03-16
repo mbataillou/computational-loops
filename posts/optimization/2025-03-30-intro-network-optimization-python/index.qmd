@@ -10,7 +10,6 @@ categories: ["#python", "#optimization"]
 format:
   html:
     toc: true
-  typst: default
 format-links:
   - html
   - format: typst

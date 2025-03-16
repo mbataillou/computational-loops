@@ -2,10 +2,11 @@
 title: "About"
 ---
 
-I^[Find my CV
-[here](https://github.com/mbataillou/cv/blob/a14a6127f29cd2b0f0070107b8a2c446018bd985/short-academic/cv-short-mbataillou.pdf)] have
-been working as an _Applied Scientist_ since 2019. First, focusing on
-machine-learning based forecasting models, and now focusing on _large scale_
-network optimization solutions. I am deeply grateful to those who share their
-knowledge online, as I have learned so much from them. I hope that Computational
-Loops can also contribute to helping others in the community.
+I^[If you want to know more about me here is my
+[CV](https://github.com/mbataillou/cv/blob/a14a6127f29cd2b0f0070107b8a2c446018bd985/short-academic/cv-short-mbataillou.pdf)
+and my [GitHub](https://github.com/mbataillou).] have been working as an
+_Applied Scientist_ since 2019. First, focusing on machine-learning based
+forecasting models, and now focusing on _large scale_ network optimization
+solutions. I am deeply grateful to those who share their knowledge online, as I
+have learned so much from them. I hope that Computational Loops can also
+contribute to helping others in the community.

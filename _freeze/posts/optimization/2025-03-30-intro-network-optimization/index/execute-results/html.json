@@ -1,0 +1,12 @@
+{
+  "hash": "510f5a423953abf7c2b458b9dcce410f",
+  "result": {
+    "engine": "julia",
+    "markdown": "---\ntitle: \"Capacitated Network Design: _an follow-up in Julia_\"\ndescription: \"An introduction to the capacitated network design problem in *Julia*\"\nauthor:\n  - name: Marc Bataillou\n    url: https://www.linkedin.com/in/marc-bataillou-almagro/\ndate: \"2024-08-25\"\ncategories: [\"#julia\", \"#optimization\"]\n# image: banner.jpg\nformat:\n  html:\n    toc: true\nformat-links:\n  - html\n  - format: typst\n    text: PDF\n    icon: file-pdf\nimage: cover.svg\nreading-time: true\nengine: julia\n---\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
