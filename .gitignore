@@ -1,0 +1,7 @@
+/**/venv
+/**/.venv
+/.quarto/
+/_site/
+/docs/
+index_files/
+.DS_Store

@@ -1,0 +1,22 @@
+---
+title: "Capacitated Network Design: _an introduction_"
+description: "An introduction to the capacitated network design problem in *Python*."
+author:
+  - name: Marc Bataillou
+    url: https://www.linkedin.com/in/marc-bataillou-almagro/
+date: "2024-08-25"
+categories: ["#python", "#optimization"]
+# image: banner.jpg
+format:
+  html:
+    toc: true
+  typst: default
+format-links:
+  - html
+  - format: typst
+    text: PDF
+    icon: file-pdf
+image: cover.svg
+reading-time: true
+engine: python
+---

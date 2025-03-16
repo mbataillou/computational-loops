@@ -1,0 +1,22 @@
+---
+title: "Capacitated Network Design: _an follow-up in Julia_"
+description: "An introduction to the capacitated network design problem in *Julia*"
+author:
+  - name: Marc Bataillou
+    url: https://www.linkedin.com/in/marc-bataillou-almagro/
+date: "2024-08-25"
+categories: ["#julia", "#optimization"]
+# image: banner.jpg
+format:
+  html:
+    toc: true
+  typst: default
+format-links:
+  - html
+  - format: typst
+    text: PDF
+    icon: file-pdf
+image: cover.svg
+reading-time: true
+engine: julia
+---

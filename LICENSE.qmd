@@ -1,0 +1,1 @@
+[CC Attribution 4.0 International](./LICENSE-CC.qmd) OR [MIT](./LICENSE-MIT.qmd).

@@ -1,0 +1,75 @@
+:root {
+    /* Dark colors */
+    --midnight-blue: #{$midnight-blue};
+    --dark-pink: #{$dark-pink};
+    --calm-white: #{$calm-white};
+    /* Light colors */
+    --pale-white: #{$pale-white};
+    --light-pink: #{$light-pink};
+}
+
+.nav-footer {
+    background-color: transparent;
+}
+
+body.quarto-light {
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04); */
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.02) 1px,
+            transparent 1px
+        ),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+body.quarto-dark {
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04); */
+    background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.01) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.01) 1px,
+            transparent 1px
+        );
+    background-size: 10px 10px;
+}
+
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.crimson-text-semibold {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.crimson-text-bold {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.crimson-text-regular-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.crimson-text-bold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+}
