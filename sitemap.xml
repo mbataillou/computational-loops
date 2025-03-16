@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mbataillou.github.io/computational-loops/LICENSE.html</loc>
-    <lastmod>2025-03-16T20:29:44.405Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/about.html</loc>
-    <lastmod>2025-03-16T20:29:44.406Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/LICENSE-CC.html</loc>
-    <lastmod>2025-03-16T20:29:44.405Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/posts/optimization/2025-03-30-intro-network-optimization-python/index.html</loc>
-    <lastmod>2025-03-16T20:35:09.836Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/posts/statistics/listing.html</loc>
-    <lastmod>2025-03-16T20:29:44.408Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/posts/optimization/listing.html</loc>
-    <lastmod>2025-03-16T20:29:44.408Z</lastmod>
+    <lastmod>2025-03-16T20:48:46.940Z</lastmod>
   </url>
   <url>
     <loc>https://mbataillou.github.io/computational-loops/posts/optimization/2025-03-30-intro-network-optimization/index.html</loc>
-    <lastmod>2025-03-16T20:29:44.407Z</lastmod>
+    <lastmod>2025-03-16T20:48:46.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/posts/optimization/2025-03-30-intro-network-optimization-python/index.html</loc>
+    <lastmod>2025-03-16T20:48:46.942Z</lastmod>
   </url>
   <url>
     <loc>https://mbataillou.github.io/computational-loops/index.html</loc>
-    <lastmod>2025-03-16T20:29:44.406Z</lastmod>
+    <lastmod>2025-03-16T20:48:46.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/LICENSE-CC.html</loc>
+    <lastmod>2025-03-16T20:48:46.940Z</lastmod>
   </url>
   <url>
     <loc>https://mbataillou.github.io/computational-loops/LICENSE-MIT.html</loc>
-    <lastmod>2025-03-16T20:29:44.405Z</lastmod>
+    <lastmod>2025-03-16T20:48:46.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/about.html</loc>
+    <lastmod>2025-03-16T20:48:46.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/posts/optimization/listing.html</loc>
+    <lastmod>2025-03-16T20:48:46.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/posts/statistics/listing.html</loc>
+    <lastmod>2025-03-16T20:48:46.943Z</lastmod>
   </url>
 </urlset>

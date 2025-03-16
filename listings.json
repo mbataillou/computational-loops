@@ -1,7 +1,10 @@
 [
   {
-    "listing": "/posts/statistics/listing.html",
-    "items": []
+    "listing": "/index.html",
+    "items": [
+      "/posts/optimization/listing.html",
+      "/posts/statistics/listing.html"
+    ]
   },
   {
     "listing": "/posts/optimization/listing.html",
@@ -11,10 +14,7 @@
     ]
   },
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/optimization/listing.html",
-      "/posts/statistics/listing.html"
-    ]
+    "listing": "/posts/statistics/listing.html",
+    "items": []
   }
 ]
