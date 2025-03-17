@@ -5,7 +5,7 @@ website:
   title: "Computational Loops"
   twitter-card: true
   open-graph: true
-  google-analytics: "GTM-TGXZFMJK"
+  google-analytics: "G-SQFZ4RY5VD"
   navbar:
     right:
       - href: posts/optimization/listing.qmd
