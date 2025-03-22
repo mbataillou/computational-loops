@@ -1,11 +1,10 @@
 ---
-title: "Capacitated Network Design: _an introduction_"
+title: "Multi-commodity Capacitated Network Design: _an introduction_"
 description: "An introduction to the capacitated network design problem in *Python*."
 author:
   - name: Marc Bataillou
     url: https://www.linkedin.com/in/marc-bataillou-almagro/
 date: "2024-08-25"
-categories: ["#python", "#optimization"]
 # image: banner.jpg
 format:
   html:
@@ -20,18 +19,8 @@ reading-time: true
 engine: python
 ---
 
+## What is Network Design?
 
-:::: {.columns}
+Network Design consists of
 
-::: {.column width="80%"}
-The Multi-commodity Capacitated Network Design problem has been studied for multiple
-
-:::
-
-::: {.column width="4%"}
-:::
-
-::: {.column width="15%"}
-![](img/dynamic-graph.html){width=300% height=10cm}
-:::
-::::
+![](img/dynamic-graph.html){width=60% height=10cm fig-align="center"}

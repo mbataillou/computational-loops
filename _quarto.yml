@@ -10,6 +10,8 @@ website:
     right:
       - href: posts/optimization/listing.qmd
         text: Optimization Loops
+      - href: posts/statistics/listing.qmd
+        text: Statistical Loops
       - href: about.qmd
         text: About
   page-footer:
@@ -31,6 +33,12 @@ format:
     css: style/common_style.css
     toc: true
     html-math-method: katex
+    include-in-header:
+      text: |
+        <div id="background-graph"></div>
+        <script src="//cdn.jsdelivr.net/npm/force-graph"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="/style/background-graph.js" defer></script>
     header-includes: |
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');

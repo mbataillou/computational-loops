@@ -10,8 +10,8 @@ listing:
 ---
 
 _Computational Loops_ is a blog series dedicated to _large-scale_
-[optimization](./posts/optimization/listing.html) and statistical analysis. It aims to
-provide a comprehensive overview of the entire workflow, including data
+**optimization** and **statistical analysis**. It aims to
+provide a **comprehensive** overview of the entire workflow, including data
 processing, data structures, modeling, metrics, and visualization.
 
 ---

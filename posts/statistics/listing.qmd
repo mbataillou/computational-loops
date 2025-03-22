@@ -9,6 +9,14 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: false
+format:
+  html:
+    include-in-header:
+      text: |
+        <div id="background-graph"></div>
+        <script src="//cdn.jsdelivr.net/npm/force-graph"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="/style/background-graph.js" defer></script>
 ---
 
 Find below the latest loops on _statistical analysis_.

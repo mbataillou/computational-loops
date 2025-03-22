@@ -17,7 +17,7 @@
 
     <script>
         // Random tree
-        const N = 200;
+        const N = 300;
         const gData = {
             nodes: [...Array(N).keys()].map((i) => ({
                 id: i,
@@ -35,21 +35,32 @@
         const Graph = new ForceGraph()(document.getElementById("graph"))
             .width(document.getElementById("graph").clientWidth)
             .height(document.getElementById("graph").clientHeight)
+            .enableZoomPanInteraction(true)
             .linkDirectionalParticles(2)
             .graphData(gData)
-            .d3Force("charge", d3.forceManyBody().strength(-4))
-            .d3Force("center", d3.forceCenter(0, 0))
+            .d3Force("charge", d3.forceManyBody().strength(-2))
+            .d3Force(
+                "center",
+                d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2),
+            )
+            .centerAt(window.innerWidth / 2, window.innerHeight / 2)
             .d3Force(
                 "link",
                 d3
                     .forceLink()
                     .id((d) => d.id)
-                    .distance(50),
+                    .distance(40),
             );
         window.addEventListener("resize", () => {
             Graph.width(window.innerWidth)
                 .height(window.innerHeight)
-                .d3Force("center", d3.forceCenter(0, 0));
+                .d3Force(
+                    "center",
+                    d3.forceCenter(
+                        window.innerWidth / 2,
+                        window.innerHeight / 2,
+                    ),
+                );
         });
     </script>
 </body>
