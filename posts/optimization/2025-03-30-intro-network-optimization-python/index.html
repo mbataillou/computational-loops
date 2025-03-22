@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-08-25">
 <meta name="description" content="An introduction to the capacitated network design problem in Python.">
 
-<title>Capacitated Network Design: an introduction – Computational Loops</title>
+<title>Multi-commodity Capacitated Network Design: an introduction – Computational Loops</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,27 +81,31 @@ gtag('js', new Date());
 gtag('config', 'G-SQFZ4RY5VD', { 'anonymize_ip': true});
 </script>
 <style>html{ scroll-behavior: smooth; }</style>
+<meta property="og:title" content="Multi-commodity Capacitated Network Design: an introduction – Computational Loops">
+<meta property="og:description" content="An introduction to the capacitated network design problem in Python.">
+<meta property="og:image" content="https://mbataillou.github.io/computational-loops/posts/optimization/2025-03-30-intro-network-optimization-python/img/cover.png">
+<meta property="og:site_name" content="Computational Loops">
+<meta property="og:image:height" content="999">
+<meta property="og:image:width" content="999">
+<meta name="twitter:title" content="Multi-commodity Capacitated Network Design: an introduction – Computational Loops">
+<meta name="twitter:description" content="An introduction to the capacitated network design problem in Python.">
+<meta name="twitter:image" content="https://mbataillou.github.io/computational-loops/posts/optimization/2025-03-30-intro-network-optimization-python/img/cover.png">
+<meta name="twitter:image-height" content="999">
+<meta name="twitter:image-width" content="999">
+<meta name="twitter:card" content="summary_large_image">
+</head><body class="nav-fixed"><div id="background-graph"></div>
+<script src="//cdn.jsdelivr.net/npm/force-graph"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="../../../style/background-graph.js" defer=""></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 </style>
 
 
 <link rel="stylesheet" href="../../../style/common_style.css">
-<meta property="og:title" content="Capacitated Network Design: an introduction – Computational Loops">
-<meta property="og:description" content="An introduction to the capacitated network design problem in Python.">
-<meta property="og:image" content="https://mbataillou.github.io/computational-loops/posts/optimization/2025-03-30-intro-network-optimization-python/img/cover.png">
-<meta property="og:site_name" content="Computational Loops">
-<meta property="og:image:height" content="999">
-<meta property="og:image:width" content="999">
-<meta name="twitter:title" content="Capacitated Network Design: an introduction – Computational Loops">
-<meta name="twitter:description" content="An introduction to the capacitated network design problem in Python.">
-<meta name="twitter:image" content="https://mbataillou.github.io/computational-loops/posts/optimization/2025-03-30-intro-network-optimization-python/img/cover.png">
-<meta name="twitter:image-height" content="999">
-<meta name="twitter:image-width" content="999">
-<meta name="twitter:card" content="summary_large_image">
-</head>
 
-<body class="nav-fixed">
+
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -123,6 +127,10 @@ gtag('config', 'G-SQFZ4RY5VD', { 'anonymize_ip': true});
 <span class="menu-text">Optimization Loops</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../../posts/statistics/listing.html"> 
+<span class="menu-text">Statistical Loops</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -138,20 +146,22 @@ gtag('config', 'G-SQFZ4RY5VD', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-network-design" id="toc-what-is-network-design" class="nav-link active" data-scroll-target="#what-is-network-design">What is Network Design?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Capacitated Network Design: <em>an introduction</em></h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">#python</div>
-    <div class="quarto-category">#optimization</div>
-  </div>
-  </div>
+<h1 class="title">Multi-commodity Capacitated Network Design: <em>an introduction</em></h1>
+</div>
 
 <div>
   <div class="description">
@@ -184,17 +194,17 @@ gtag('config', 'G-SQFZ4RY5VD', { 'anonymize_ip': true});
 </header>
 
 
-<div class="columns">
-<div class="column" style="width:80%;">
-<p>The Multi-commodity Capacitated Network Design problem has been studied for multiple</p>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:15%;">
-<p><embed src="img/dynamic-graph.html" style="width:300.0%;height:10cm"></p>
+<section id="what-is-network-design" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-network-design">What is Network Design?</h2>
+<p>Network Design consists of</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><embed src="img/dynamic-graph.html" class="quarto-figure quarto-figure-center" style="width:60.0%;height:10cm"></p>
+</figure>
 </div>
-</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

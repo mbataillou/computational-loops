@@ -7,18 +7,18 @@
     "text": "CC Attribution 4.0 International OR MIT."
   },
   {
-    "objectID": "posts/optimization/2025-03-30-intro-network-optimization-julia/index.html",
-    "href": "posts/optimization/2025-03-30-intro-network-optimization-julia/index.html",
-    "title": "Capacitated Network Design: an follow-up in Julia",
-    "section": "",
-    "text": "The Multi-commodity Capacitated Network Design problem has been studied for multiple"
-  },
-  {
     "objectID": "posts/optimization/2025-03-30-intro-network-optimization-python/index.html",
     "href": "posts/optimization/2025-03-30-intro-network-optimization-python/index.html",
-    "title": "Capacitated Network Design: an introduction",
+    "title": "Multi-commodity Capacitated Network Design: an introduction",
     "section": "",
-    "text": "The Multi-commodity Capacitated Network Design problem has been studied for multiple"
+    "text": "Network Design consists of"
+  },
+  {
+    "objectID": "posts/optimization/2025-03-30-intro-network-optimization-python/index.html#what-is-network-design",
+    "href": "posts/optimization/2025-03-30-intro-network-optimization-python/index.html#what-is-network-design",
+    "title": "Multi-commodity Capacitated Network Design: an introduction",
+    "section": "",
+    "text": "Network Design consists of"
   },
   {
     "objectID": "index.html",
@@ -60,7 +60,7 @@
     "href": "posts/optimization/listing.html",
     "title": "Latest Optimization Loops",
     "section": "",
-    "text": "Find below the latest loops on optimization.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitated Network Design: an introduction\n\n\n\n\n\nAn introduction to the capacitated network design problem in Python.\n\n\n\n\n\nAug 25, 2024\n\n\nMarc Bataillou\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitated Network Design: an follow-up in Julia\n\n\n\n\n\nAn introduction to the capacitated network design problem in Julia\n\n\n\n\n\nAug 25, 2024\n\n\nMarc Bataillou\n\n\n\n\n\n\nNo matching items"
+    "text": "Find below the latest loops on optimization.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMulti-commodity Capacitated Network Design: an introduction\n\n\n\n\n\nAn introduction to the capacitated network design problem in Python.\n\n\n\n\n\nAug 25, 2024\n\n\nMarc Bataillou\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/statistics/listing.html",
