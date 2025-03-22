@@ -3,7 +3,7 @@ title: "About"
 ---
 
 I^[If you want to know more about me here is my
-[CV](https://github.com/mbataillou/cv/blob/a14a6127f29cd2b0f0070107b8a2c446018bd985/short-academic/cv-short-mbataillou.pdf)
+[CV](https://nightly.link/mbataillou/cv/workflows/makefile/main/cv-short-mbataillou)
 and my [GitHub](https://github.com/mbataillou).] have been working as an
 _Applied Scientist_ since 2019. First, focusing on machine-learning based
 forecasting models, and now focusing on _large scale_ network optimization

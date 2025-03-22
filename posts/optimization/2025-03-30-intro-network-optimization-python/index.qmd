@@ -15,7 +15,23 @@ format-links:
   - format: typst
     text: PDF
     icon: file-pdf
-image: cover.svg
+image: ./img/cover.png
 reading-time: true
 engine: python
 ---
+
+
+:::: {.columns}
+
+::: {.column width="80%"}
+The Multi-commodity Capacitated Network Design problem has been studied for multiple
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="15%"}
+![](img/dynamic-graph.html){width=300% height=10cm}
+:::
+::::
