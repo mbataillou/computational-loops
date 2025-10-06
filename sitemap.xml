@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mbataillou.github.io/computational-loops/LICENSE.html</loc>
-    <lastmod>2025-03-23T12:08:12.070Z</lastmod>
+    <loc>https://mbataillou.github.io/computational-loops/about.html</loc>
+    <lastmod>2025-10-06T07:01:20.022Z</lastmod>
   </url>
   <url>
     <loc>https://mbataillou.github.io/computational-loops/posts/optimization/2025-03-30-intro-network-optimization-python/index.html</loc>
-    <lastmod>2025-03-23T12:08:12.074Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/index.html</loc>
-    <lastmod>2025-03-23T12:08:12.071Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/LICENSE-CC.html</loc>
-    <lastmod>2025-03-23T12:08:12.070Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/LICENSE-MIT.html</loc>
-    <lastmod>2025-03-23T12:08:12.070Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/about.html</loc>
-    <lastmod>2025-03-23T12:08:12.071Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbataillou.github.io/computational-loops/posts/optimization/listing.html</loc>
-    <lastmod>2025-03-23T12:08:12.074Z</lastmod>
+    <lastmod>2025-10-06T07:01:20.025Z</lastmod>
   </url>
   <url>
     <loc>https://mbataillou.github.io/computational-loops/posts/statistics/listing.html</loc>
-    <lastmod>2025-03-23T12:08:12.074Z</lastmod>
+    <lastmod>2025-10-06T07:01:20.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/LICENSE.html</loc>
+    <lastmod>2025-10-06T07:01:20.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/LICENSE-MIT.html</loc>
+    <lastmod>2025-10-06T07:01:20.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/index.html</loc>
+    <lastmod>2025-10-06T07:01:20.022Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/LICENSE-CC.html</loc>
+    <lastmod>2025-10-06T07:01:20.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbataillou.github.io/computational-loops/posts/optimization/listing.html</loc>
+    <lastmod>2025-10-06T07:01:20.025Z</lastmod>
   </url>
 </urlset>
