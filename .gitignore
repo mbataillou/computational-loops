@@ -7,3 +7,5 @@ index_files/
 .DS_Store
 
 *.pdf
+
+**/*.quarto_ipynb

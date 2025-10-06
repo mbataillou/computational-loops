@@ -1,7 +1,22 @@
 /*-- scss:defaults --*/
 $pale-white: #f8f3f2;
 $light-pink: #800000;
+// Rosé Pine Dawn Palette
+$rp-base: #faf4ed;
+$rp-surface: #fffaf3;
+$rp-overlay: #f2e9de;
+$rp-muted: #9893a5;
+$rp-subtle: #797593;
+$rp-text: #575279;
+$rp-love: #b4637a;
+$rp-gold: #ea9d34;
+$rp-rose: #d7827e;
+$rp-pine: #286983;
+$rp-foam: #56949f;
+$rp-iris: #907aa9;
+$rp-highlight: #f4ede8;
 // Base document colors
 $navbar-bg: transparent;
-$body-bg: $pale-white;
-$link-color: $light-pink;
+$body-bg: $rp-base;
+$body-color: $rp-text;
+$link-color: $rp-pine;
