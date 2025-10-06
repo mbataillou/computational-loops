@@ -1,1 +1,1 @@
-Sitemap: https://mbataillou.github.io/computational-loops/sitemap.xml
+Sitemap: https://computational-loops.com/sitemap.xml
