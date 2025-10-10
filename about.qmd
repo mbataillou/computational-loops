@@ -1,6 +1,5 @@
----
-title: "About"
----
+
+## Marc Bataillou Almagro
 
 I^[If you want to know more about me here is my
 [CV](https://nightly.link/mbataillou/cv/workflows/makefile/main/cv-short-mbataillou)
@@ -12,3 +11,7 @@ have learned so much from them. I hope that Computational Loops can also
 contribute to helping others in the community.
 
 _The opinions expressed herein are solely my own and do not necessarily reflect the views or positions of my employer._
+
+## Jean-Charles Croix
+
+Jean-Charles Croix is an Applied Scientist at Amazon since 2020 and a good friend of Marc. He holds a PhD in applied mathematics and is always curious about the field. His interests span a wide range of topics in science and technology.
