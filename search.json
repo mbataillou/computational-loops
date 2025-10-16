@@ -2,16 +2,23 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About the Authors",
     "section": "",
-    "text": "I1 have been working as an Applied Scientist since 2019. First, focusing on machine-learning based forecasting models, and now focusing on large scale network optimization solutions. I am deeply grateful to those who share their knowledge online, as I have learned so much from them. I hope that Computational Loops can also contribute to helping others in the community.\nThe opinions expressed herein are solely my own and do not necessarily reflect the views or positions of my employer."
+    "text": "This page introduces the contributors to Computational Loops.\nEach author brings a unique perspective shaped by their scientific and technical experiences."
   },
   {
-    "objectID": "about.html#footnotes",
-    "href": "about.html#footnotes",
-    "title": "About",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nIf you want to know more about me here is my CV and my GitHub.↩︎"
+    "objectID": "about.html#marc-bataillou-almagro",
+    "href": "about.html#marc-bataillou-almagro",
+    "title": "About the Authors",
+    "section": "Marc Bataillou Almagro",
+    "text": "Marc Bataillou Almagro\nRole: Applied Scientist\nSince: 2019\nLinks: CV · GitHub\nMarc has been working as an Applied Scientist since 2019, first focusing on machine-learning-based forecasting models, and now on large-scale network optimization solutions. He is deeply grateful to those who share their knowledge online and hopes that Computational Loops can also help others in the community."
+  },
+  {
+    "objectID": "about.html#jean-charles-croix",
+    "href": "about.html#jean-charles-croix",
+    "title": "About the Authors",
+    "section": "Jean-Charles Croix",
+    "text": "Jean-Charles Croix\nRole: Applied Scientist (Amazon)\nSince: 2020\nLinks: GitHub\nJean-Charles Croix is an Applied Scientist at Amazon since 2020 and a good friend of Marc. He holds a PhD in applied mathematics and is always curious about the field. His interests span a wide range of topics in science and technology.\n\n\nThe opinions expressed herein are solely those of the authors and do not necessarily reflect the views or positions of their employers."
   },
   {
     "objectID": "posts/optimization/2025-03-30-intro-network-optimization-python/index.html",
