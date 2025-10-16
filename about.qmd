@@ -1,14 +1,42 @@
 ---
-title: "About"
+title: "About the Authors"
+subtitle: "Meet the contributors behind Computational Loops"
+format:
+  html:
+    toc: false
+    page-layout: full
+    title-block: true        # Ensures Quarto’s built-in title block is shown once
+    title-block-banner: false
 ---
 
-I^[If you want to know more about me here is my
-[CV](https://nightly.link/mbataillou/cv/workflows/makefile/main/cv-short-mbataillou)
-and my [GitHub](https://github.com/mbataillou).] have been working as an
-_Applied Scientist_ since 2019. First, focusing on machine-learning based
-forecasting models, and now focusing on _large scale_ network optimization
-solutions. I am deeply grateful to those who share their knowledge online, as I
-have learned so much from them. I hope that Computational Loops can also
-contribute to helping others in the community.
+This page introduces the contributors to **Computational Loops**.  
+Each author brings a unique perspective shaped by their scientific and technical experiences.
 
-_The opinions expressed herein are solely my own and do not necessarily reflect the views or positions of my employer._
+---
+
+## Marc Bataillou Almagro
+
+**Role:** Applied Scientist  
+**Since:** 2019  
+**Links:** [CV](https://nightly.link/mbataillou/cv/workflows/makefile/main/cv-short-mbataillou) · [GitHub](https://github.com/mbataillou)
+
+Marc has been working as an *Applied Scientist* since 2019, first focusing on
+machine-learning-based forecasting models, and now on *large-scale* network
+optimization solutions. He is deeply grateful to those who share their knowledge
+online and hopes that Computational Loops can also help others in the community.
+
+---
+
+## Jean-Charles Croix
+
+**Role:** Applied Scientist (Amazon)  
+**Since:** 2020  
+**Links:** [GitHub](https://github.com/jeancharlescroix)
+
+Jean-Charles Croix is an Applied Scientist at Amazon since 2020 and a good friend
+of Marc. He holds a PhD in applied mathematics and is always curious about the field.
+His interests span a wide range of topics in science and technology.
+
+---
+
+> _The opinions expressed herein are solely those of the authors and do not necessarily reflect the views or positions of their employers._
