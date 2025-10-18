@@ -1,0 +1,161 @@
+---
+title: "From Categories to Continuous Spaces: Embedding Nominal Variables for Machine Learning"
+description: "Why nominal categorical variables must live in continuous spaces — from one-hot encoding to learned embeddings."
+author:
+  - name: Jean-Charles Croix
+    url: https://www.linkedin.com/in/jean-charles-croix-88778850/
+date: "2025-10-17"
+categories: ["#python", "#statistics"]
+# image: banner.jpg
+format:
+  html:
+    toc: true
+format-links:
+  - html
+  - format: typst
+    text: PDF
+    icon: file-pdf
+image: ./img/cover.png
+reading-time: true
+engine: python
+---
+
+![](img/dynamic-graph.html){width=100% height=10cm}
+
+# Motivation: turning symbols into vectors
+
+Machine learning algorithms fundamentally operate on **continuous numerical data** — they measure distances, optimize gradients, and generalize through continuous transformations. However, many useful features in real datasets are **nominal categorical variables**: pure symbols such as colors, product IDs, or country names that have no intrinsic order or metric structure.
+
+| Variable | Type    | Example Values               |
+| -------- | ------- | ---------------------------- |
+| Color    | Nominal | {red, green, blue}           |
+| Country  | Nominal | {France, Japan, Brazil}      |
+| Product  | Nominal | {Laptop, Smartphone, Tablet} |
+
+To feed these symbols into a machine learning model we must **embed them into a continuous vector space** that preserves identity while enabling learning.
+
+> **Key question:** *How can we represent categorical symbols as points in a continuous space that preserves distinct identity and allows learning meaningful relationships?*
+
+# Scalar encoding
+
+A natural question when working with categorical variables is: *why not just assign a single scalar to each category?* After all, for the simple case of predicting a scalar target \(y\) from a single categorical variable \(c\), this approach is mathematically optimal under the L2 loss.  
+
+Concretely, if we assign one scalar $s_c$ per category and predict  
+
+$$ \hat{y} = s_c,$$ 
+
+then the L2-optimal solution is simply the **conditional mean**:
+
+$$
+s_c^* = \mathbb{E}[y \mid c].
+$$
+
+This perfectly fits the training targets and cannot be improved upon in terms of minimizing squared error. In this very restricted setting — one categorical variable, one scalar target — there is no need for a higher-dimensional embedding.  
+
+However, this simplicity does **not generalize** when we consider multiple categorical variables. Suppose we have two variables, $c_1$ and $c_2$, and we want a linear model to predict $y$ as a function of both:  
+
+$$
+\hat{y} = w_1 s_{c_1} + w_2 s_{c_2} + b,
+$$  
+
+where $s_{c_1}$ and $s_{c_2}$ are scalar embeddings. In this case, the model is constrained to combine the two scalars **linearly**. This can block the model from representing certain patterns. For example, consider the following target table:
+
+| $c_1$ | $c_2$ | $y$ |
+|----------|----------|---------------|
+| A        | X        | 0             |
+| A        | Y        | 1             |
+| B        | X        | 1             |
+| B        | Y        | 0             |
+
+A linear combination of scalar embeddings cannot represent this pattern without assigning arbitrary combinations for each pair (effectively a full table). The desired “checkerboard” pattern cannot be captured by a linear sum of two scalars.  
+
+Vector embeddings resolve this limitation. By assigning each category a **multi-dimensional vector**, the linear model can combine dimensions independently along multiple axes, effectively allowing the representation of **interactions and complex patterns** without exploding the number of parameters. This is why embeddings of dimension greater than one are not overkill: they enable models to generalize, represent structure, and capture patterns that scalar encodings cannot.
+
+# One-hot encoding
+
+The one-hot encoding assigns each category a basis vector in $\mathbb{R}^N$, with $N$ the number of categories. For example, the categorical variable `Color = {red, green, blue}` is mapped as follows:
+
+| Category | Vector    |
+| -------- | --------- |
+| red      | [1, 0, 0] |
+| green    | [0, 1, 0] |
+| blue     | [0, 0, 1] |
+
+One-hot vectors are continuous points (corners of a hypercube) and make symbols numeric and orthogonal. In linear models each one-hot feature corresponds to an independent parameter — a straightforward, interpretable mapping.
+
+**Weaknesses of one-hot:**
+
+- **Dimensional explosion:** high cardinality features (IDs, words) lead to extremely wide, sparse inputs.
+- **No notion of similarity:** every pair of categories is equidistant; the representation encodes identity but not relationships.
+
+One-hot is thus the **trivial (degenerate) embedding**: it provides geometry but not structure.
+
+# Beyond One-Hot: Learning the Geometry
+
+If categories live in a vector space, we might ask whether that space’s **geometry can reflect useful relationships**.  
+Embeddings answer *yes*: instead of assigning each category a fixed orthogonal vector (as in one-hot encoding), we assign each one a **dense vector of trainable parameters** in $\mathbb{R}^d$, where $d \ll N$.
+
+| Category | Embedding (example) |
+| -------- | ------------------- |
+| red      | [0.8, 0.1]          |
+| green    | [0.1, 0.9]          |
+| blue     | [0.7, 0.3]          |
+
+These vectors are learned automatically by the model. Categories that play similar roles in the data become **geometrically close**, turning the embedding space into a **semantic geometry** where distance encodes relationship.
+
+Embeddings generalize one-hot: with $d = N$ and orthogonal rows, we recover the one-hot basis. In practice, embeddings both **compress** and **structure** the categorical space.
+
+## Implementation view: an embedding as a trainable matrix
+
+Formally, an embedding layer is just a matrix:
+
+$$
+E \in \mathbb{R}^{N \times d}
+$$
+
+where category $i$ maps to row $E_i$. During backpropagation, these rows are updated like any other model weights.
+
+For example, with $N = 10{,}000$ and $d = 32$, the layer has $320{,}000$ parameters — compact compared to a one-hot representation, which would require $\mathcal{O}(N)$ memory per sample instead of $\mathcal{O}(d)$.
+
+> **Note:** This learning happens naturally in *neural network models*, where embeddings are part of the trainable parameters.  
+> If you’re using a non-neural model (e.g., a linear model or XGBoost), you can **precompute embeddings** with a small neural network, then feed those fixed vectors as inputs to your downstream model.  
+> This way, even traditional models can benefit from the learned geometric structure.
+
+## Embedding structure
+
+Embeddings don’t just compress data — they **learn relationships**.  
+The classic word-embedding example captures arithmetic with semantics:
+
+$$
+E_{king} - E_{man} + E_{woman} \approx E_{queen}
+$$
+
+In recommendation or tabular settings, similar structures emerge: co-purchased products cluster together, users with similar behavior lie nearby, and even geographic or linguistic patterns can arise automatically.
+
+In this way, categorical symbols form a **meaningful manifold** inside the model’s learned space.
+
+## Choosing the embedding dimension
+
+The embedding dimension $d$ balances **expressiveness** and **efficiency**.  
+Common heuristics include:
+
+- $d = \min(50, \text{round}(N^{1/4}))$ (a widely used default)
+- For very large vocabularies, some studies suggest scaling as $N^{0.5\text{–}0.6}$
+
+Rough guidance:
+
+- Small categorical features → $d \in [4, 16]$  
+- Medium domains (users, products) → $d \in [16, 64]$  
+- Very large vocabularies (e.g. words) → $d$ in the hundreds
+
+Ultimately, $d$ is a **hyperparameter**: performance usually improves rapidly with $d$ until reaching a plateau.
+
+# Conclusion
+
+Nominal variables are discrete but must be **expressed continuously** to interact with ML systems. Moving from one-hot encoding to learned embeddings reframes categorical modelling as a geometric problem: place symbols as points on a meaningful manifold so that learning can exploit distances and directions.
+
+Embeddings turn categorical identity into **continuous structure** — enabling generalization, transfer, and much more compact models.
+
+---
+
+*Disclaimer: This article was written with the assistance of a Large Language Model (LLM).*
